@@ -1,0 +1,195 @@
+.wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.wrapper.toggled {
+    padding-left: 250px;
+}
+
+.sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: visible;
+    overflow-x:hidden;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+.sibebar-wrapper-inner{
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+.wrapper.toggled .sidebar-wrapper {
+    width: 250px;
+}
+
+.page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+
+}
+
+.wrapper.toggled .page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    //position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: visible;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #264679;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #fff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+/* Schermi di grandi dimensioni */
+@media(min-width:768px) {
+    .wrapper {
+        padding-left: 250px;
+    }
+
+    .wrapper.toggled {
+        padding-left: 0px; /* prima era 0 */
+    }
+
+    .sidebar-wrapper {
+        width: 250px;
+    }
+
+    .wrapper.toggled .sidebar-wrapper {
+        width: 0px; /* prima era 0 */
+    }
+
+    .page-content-wrapper {
+        padding: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+    }
+
+    .wrapper.toggled .page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+//Override navbar-toggle float
+.navbar-toggle {
+    float: left;
+    margin-left: 15px;
+}
+
+/**
+ * Color sidebar-default
+ */
+.sidebar-default{
+    background: @navbar-default-bg;
+    color:@navbar-default-link-color;
+    border-right: 1px solid @navbar-default-border;
+
+    .sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: @navbar-default-link-color;
+    }
+
+    .sidebar-nav li a:hover {
+        text-decoration: none;
+        color: @navbar-default-link-hover-color;
+        background: @navbar-default-link-hover-bg;
+    }
+    .sidebar-nav > .sidebar-brand a {
+    color: @navbar-default-brand-color;
+    }
+
+    .sidebar-nav > .sidebar-brand a:hover {
+        color: @navbar-default-brand-hover-color;
+        background: @navbar-default-brand-hover-bg;
+    }
+}
+
+/**
+ * Color sidebar-inverse
+ */
+.sidebar-inverse{
+    background: @navbar-inverse-bg;
+    color:@navbar-inverse-link-color;
+    border-right: 1px solid @navbar-inverse-border;
+
+    .sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: @navbar-inverse-link-color;
+    }
+
+    .sidebar-nav li a:hover {
+        text-decoration: none;
+        color: @navbar-inverse-link-hover-color;
+        background: @navbar-inverse-link-hover-bg;
+    }
+    .sidebar-nav > .sidebar-brand a {
+    color: @navbar-inverse-brand-color;
+    }
+
+    .sidebar-nav > .sidebar-brand a:hover {
+        color: @navbar-inverse-brand-hover-color;
+        background: @navbar-inverse-brand-hover-bg;
+    }
+}
