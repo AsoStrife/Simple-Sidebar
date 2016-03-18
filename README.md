@@ -1,4 +1,4 @@
-# [Simple Sidebar]
+# Simple Sidebar
 
 [Simple Sidebar](http://startbootstrap.com/template-overviews/simple-sidebar/) is an off canvas sidebar navigation template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/) and forked by [@AsoStrife](http://andreacorriga.com).
 
@@ -15,7 +15,7 @@ Have a bug or an issue with this template? [Open a new issue](https://github.com
 
 ## Creator
 
-Start Bootstrap was created by **[David Miller](http://davidmiller.io/)**, forked by ** [Andrea Corriga @AsoStrife](http://andreacorriga.com/).
+Start Bootstrap was created by **[David Miller](http://davidmiller.io/)**, forked by ** [Andrea Corriga @AsoStrife](http://andreacorriga.com/)**.
 
 * https://twitter.com/asostrife
 * https://github.com/asostrife
