@@ -26,3 +26,6 @@ Start Bootstrap was created by **[David Miller](http://davidmiller.io/)**, forke
 * Fix sidebar for small screen. Now vertical scroll work
 * Fix toogle menu when window resize 
 * Navbar toogle button floated on right 
+
+# [Demo](http://asostrife.github.io/Simple-Sidebar/) 
+Try it clicking [here](http://asostrife.github.io/Simple-Sidebar/) 
